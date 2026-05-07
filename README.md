@@ -71,4 +71,9 @@ Note: This may take some time (10-30 seconds) because it also generates LIME exp
 - app_with_lime.py gives both prediction and reasons (why the model decided Real or Fake).
 
 ## Final Model
-**SVM** – Final model achieving the best F1 score for detecting fake postings.
+- Among the models trained (Logistic Regression, SVM, XGBoost), **SVM** achieved the best F1 score and is used as the default final model in this project.
+- However, for flexibility, the tuned **Logistic Regression** and **XGBoost** models are also included (`best_lr_tuned_model.pkl`, `best_xgb_tuned_model.pkl`).  
+- Users can load and test these models if they want to compare performance or explore alternative approaches.
+
+## Thank You
+
